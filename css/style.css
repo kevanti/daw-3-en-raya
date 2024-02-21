@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+body .preGame {
+  display: flex;
+  flex-direction: column;
+}
+body .preGame > label {
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: "workbench";
+  color: green;
+  font-weight: 600;
+}
+body .preGame > input {
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  height: 30px;
+  font-family: "workbench";
+  color: greenyellow;
+  font-size: 20px;
+  font-weight: 700;
+}
+body .preGame > input:last-of-type {
+  margin-bottom: 30px;
+}
+body .inGame > button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "workbench";
+  color: green;
+  font-weight: 600;
+  background-color: lightgreen;
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .inGame > button:hover {
+  background-color: green;
+  color: lightgreen;
+}
+body .jugadas {
+  width: 100%;
+  max-width: 300px;
+  font-family: "workbench";
+  height: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  color: green;
+}
+body #marcador {
+  margin-top: 20px;
+  font-family: "workbench";
+  font-size: 20px;
+  font-weight: 600;
+  color: green;
+}
+body #tablero {
+  width: 100%;
+  gap: 0;
+  background-color: transparent;
+}
+body #tablero > div {
+  border: 1px solid green;
+  border-top: none;
+  border-left: none;
+}
+body #tablero > div:nth-of-type(3n) {
+  border-right: none;
+}
+body #tablero > div:nth-last-child(-n+3) {
+  border-bottom: none;
+}/*# sourceMappingURL=style.css.map */
